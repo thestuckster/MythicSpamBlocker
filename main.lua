@@ -54,9 +54,6 @@
 --     return false
 -- end
 
-local frame = CreateFrame('ChatFrame')
-chatFrame_AddMessageEventFilter("CHAT_MSG_CHANNEL", filterChat)
-
 local chatFrame = CreateFrame("Frame")
 chatFrame:RegisterEvent("CHAT_MSG_CHANNEL")
 chatFrame:SetScript("OnEvent", function(self, event, text, playerName, languageName, channelName, playerName2, specialFlags, zoneChannelId, channelIndex, channelBaseName, _, lineId, guid, bnSenderId, isMobile)
