@@ -1,0 +1,6 @@
+## Interface: 80100
+## Title: MythicSpamBlocker
+## Author: Aelmor - Stormrage
+## Version: 1.0 
+
+main.lua
