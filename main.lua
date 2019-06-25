@@ -9,7 +9,7 @@ local function filterChat(self, event, text, playerName, languageName, channelNa
             local lowerText = string.lower(text)
             if(lowerText:find(wts) ~= nil or lowerText:find('selling')) then
                 for i, keyword in ipairs(keywords) do
-                    if(lowerText:find(keyword) ~= nil) then 
+                    if(lowerText:find(keyword) ~= nil) then
                         return true
                     end
                 end
