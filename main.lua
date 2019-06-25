@@ -7,6 +7,12 @@ local function filterChat(self, event, text, playerName, languageName, channelNa
         
         if(text ~= nil) then
             local lowerText = string.lower(text)
+
+            -- block most guld recruitment messages 
+            if(lowerText:find('recruiting') ~= nil) then
+                return true
+            end
+
             if(lowerText:find(wts) ~= nil or lowerText:find('selling')) then
                 for i, keyword in ipairs(keywords) do
                     if(lowerText:find(keyword) ~= nil) then
