@@ -1,4 +1,4 @@
-## Interface: 80100
+## Interface: 80200
 ## Title: MythicSpamBlocker
 ## Author: Aelmor - Stormrage
 ## Version: 1.0 
