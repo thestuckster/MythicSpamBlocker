@@ -3,7 +3,7 @@ local function filterChat(self, event, text, playerName, languageName, channelNa
     local filterFuncList = ChatFrame_GetMessageEventFilters(event)
     if(channelName == "2. Trade - City") then
         local wts = 'wts'
-        local keywords = {'power leveling', 'powerleveling', 'm%+', 'mythic', 'carry', '10/15/20', 'gold only', 'boosting', 'any key', 'guarantee time'}
+        local keywords = {'gold only', 'power leveling', 'powerleveling', 'm%+', 'mythic', 'carry', '10/15/20', 'gold only', 'boosting', 'any key', 'guarantee time'}
         
         if(text ~= nil) then
             local lowerText = string.lower(text)
